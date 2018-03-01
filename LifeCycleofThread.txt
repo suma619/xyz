@@ -1,0 +1,34 @@
+Life Cycle of Thread
+--------------------
+
+New (UnStarted)
+Thread is said to be in new state when user create instance of thread class.
+Example:
+Thread t1=new Thread(m);
+
+Runnable/Running
+Thread entered in Runnable state after invocation of start() method.
+Example:
+t1.start();
+
+Not-Runnable
+Thread is said to be in Non-Runnable state if it is sleeping, waiting or blocked by another thread.
+Example:
+t1.sleep(5000);  	// Resume once number of seconds get over
+t1.wait();		// wait till developer not invoking yeild(), notify() or notifyall() method
+t1.Interrupt();	// block thread
+
+Terminate
+Thread terminate after completion of thread task or being killed by user using stop method.
+Example:
+t1.stop();
+
+
+
+
+
+
+
+
+
+
